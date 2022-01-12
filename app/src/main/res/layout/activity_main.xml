@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.core.widget.NestedScrollView
+       android:id="@+id/nestedScrollView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+
+       <LinearLayout
+           android:descendantFocusability="blocksDescendants"
+           android:orientation="vertical"
+           android:gravity="center_vertical|center_horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:text="First Name"
+               android:textSize="32sp"
+               android:background="#F1E823"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="80dp"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+           <TextView
+               android:text="Last Name"
+               android:textSize="32sp"
+               android:background="#35FA95"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="80dp"/>
+
+       </LinearLayout>
+
+
+   </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
